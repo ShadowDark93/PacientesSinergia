@@ -2,13 +2,25 @@
 
 @section('content')
     <div class="container">
+
         <table class="table">
+        <div class="card text-center">
+          <div class="card-body">
+            <h4 class="card-title">LISTA PACIENTES</h4>
+          </div>
+        </div>
+        <div class="container my-5">
+            <div class="row">
+                <a href="{{ route('pacientes.create') }}" class="btn btn-success">Crear Paciente</a>
+            </div>
+        </div>
             <thead>
                 <tr>
                     <th>Cédula</th>
                     <th>Nombres</th>
                     <th>Apellidos</th>
                     <th>Genero</th>
+                    <th>Operaciones</th>
                 </tr>
             </thead>
             <tbody>
